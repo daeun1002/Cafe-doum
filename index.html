@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doum 카페</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-2 col-tb-12">
+                    <a class="logo" href="#">
+                        <span class="material-icons">flutter_dash</span> CAFE
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="nav-btn" onclick="openNav()">
+                    <span class="material-icons">density_medium</span>
+                </a>
+                <nav class="col-10" id="mynav">
+                    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">
+                        <span class="material-icons">close</span>
+                    </a>
+                    <div class="row">
+                        <div class="col-8 col-tb-12">
+                            <a href="#" class="wei-bold red">홈</a>
+                            <a href="#">팬카페</a>
+                            <a href="#">카페랭킹</a>
+                            <a href="#">내카페</a>
+                            <span class="bar"></span>
+                            <a href="#" class="red">온라인교실</a>
+                        </div>
+                        <div class="col-4 col-tb-12 text-right">
+                            <a href="#" class="search">
+                                <span class="material-icons">search</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div> 
+    <!-- slider -->
+    <div class="slider">
+        <!-- 이전, 다음 버튼 -->
+        <a href="javascript:void(0)" class="prev" onclick="pSlide(-1)">
+            <span class="material-icons">arrow_back_ios</span>
+        </a>     
+        <a href="javascript:void(0)" class="next" onclick="pSlide(1)">
+            <span class="material-icons">arrow_forward_ios</span>
+        </a>    
+        <!-- /. 이전 다음-->
+        <!-- loof -->
+        <div class="container relative">
+            <div class="slidein">
+                <h3 class="wei-light">이야기 하나 <strong>이 계절이 괴로운 비염러들을 위하여</strong></h3>
+                <ul class="content">
+                    <li>
+                        <a href="#" class="title">비염이 무서운 이유</a>
+                        <span><a href="#">樂soccer</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">봄철 심해지는 알레르기 비염 관리 수칙</a>
+                        <span><a href="">태안 토지 직거래</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">비염 환자 공감 사진</a>
+                        <span><a href="">도탁스 (DOTAX)</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">"비염"있는 게녀들 다 드루와~ 천연 항히스타민제 알랴줌.</a>
+                        <span><a href="">＊여성시대＊ 차분한 20대들의 알흠다운 공간</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="slidein">
+                <h3 class="wei-light">이야기 둘 <strong>당신이 몰랐던 수질 오염의 실체</strong></h3>
+                <ul class="content">
+                    <li>
+                        <a href="#" class="title">해양 오염으로 해양 생물 사체들로 뒤덮힌 캄차카 반도의 유명 해변 - 화보</a>
+                        <span><a href="#">바이러시아</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">태평양에 새로 생긴 거대 섬</a>
+                        <span><a href="">이종격투기</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">당신이 알고 있는 바다오염에 관한 진실은 모두 틀렸다</a>
+                        <span><a href="">우리 동네 목욕탕</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">우주서 찍힌 놀라운 '금빛 웅덩이들'..아마존 재앙이었다</a>
+                        <span><a href="">＊여성시대＊ 차분한 20대들의 알흠다운 공간</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="slidein">
+                <h3 class="wei-light">이야기 셋 <strong>실패 없는 '인생네컷' 이렇게 찍으세요</strong></h3>
+                <ul class="content">
+                    <li>
+                        <a href="#" class="title">있지(ITZY) 류진 채령 아이돌 짬바 인생네컷</a>
+                        <span><a href="#">쭉빵카페</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">방탄소년단) 남주니 인생네컷!!!!! 컬러 추가</a>
+                        <span><a href="">소주담(談) : 소소한 주민들의 이야기</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">인생네컷 포즈 꿀팁 모음</a>
+                        <span><a href="">우리 동네 목욕탕</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">슬슬 유행할 것 같은 인생네컷 포즈</a>
+                        <span><a href="">우리 동네 목욕탕</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="slidein">
+                <h3 class="wei-light">이야기 넷 <strong>당신이 몰랐던 아카데미에 대한 TMI</strong></h3>
+                <ul class="content">
+                    <li>
+                        <a href="#" class="title">21세기 최고의 시나리오 4위로 뽑힌 기생충, 그렇다면 1위는?</a>
+                        <span><a href="#">이종격투기</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">'졌지만 잘 싸웠다'의 표본</a>
+                        <span><a href="">樂soccer</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">오스카 역사강 가장 논란이 됐던 작품상.jpg</a>
+                        <span><a href="">도탁스 (DOTAX)</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">봉준호 감독 아카데미 수상소감 최고 명장면</a>
+                        <span><a href="">이종격투기</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="slidein">
+                <h3 class="wei-light">이야기 다섯 <strong>시간을 달려줄 웰메이드 법정물</strong></h3>
+                <ul class="content">
+                    <li>
+                        <a href="#" class="title">[유퀴즈] 비밀의 숲 비시청자들 손절하는 조승우</a>
+                        <span><a href="#">＊여성시대＊ 차분한 20대들의 알흠다운 공간</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">주요 여캐들이 매력적인 드라마 로스쿨.jpgif</a>
+                        <span><a href="">＊여성시대＊ 차분한 20대들의 알흠다운 공간</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">김명민 근황 ㄷㄷ</a>
+                        <span><a href="">이종격투기</a></span>
+                    </li>
+                    <li>
+                        <a href="#" class="title">요즘 핫하게 떠오르는 드라마 "군검사 도베르만" 인물관계도</a>
+                        <span><a href="">3기갑여단</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /loof -->
+    </div>
+    <!-- cafe -->
+    <div class="mycafe">
+        <div class="container">
+            <div class="row" id="bestCafe">
+                <!-- loop -->
+                <div class="col-4 col-tb-6 py-15">
+                    <a href="#" class="card">
+                        <div class="img-thumb">
+                            <img src="./images/1.png"> 
+                        </div>
+                        <div class="card-contents">
+                            <h3 class="ellipsis">최고 피부관리사 모임</h3>
+                            <p class="title-info ellipsis">피부미용사,피부관리사,피부미용, 마사지<p>
+                            <p class="hash ellipsis">
+                                <span class="act">추천카페</span>
+                                <span>피부미용사</span>
+                                <span>피부관리사</span>
+                            </p>    
+                        </div>
+                    </a>
+                </div>   
+                <div class="col-4 col-tb-6 py-15">
+                    <a href="#" class="card">
+                        <div class="img-thumb">
+                            <img src="./images/2.png"> 
+                        </div>
+                        <div class="card-contents">
+                            <h3 class="ellipsis">마사지&스파로 연봉 1억도전, 성공창업</h3>
+                            <p class="title-info ellipsis">국내외 마사지 테라피와 스파,피부관리,피부미용<p>
+                            <p class="hash ellipsis">
+                                <span class="act">추천카페</span>
+                                <span>마사지</span>
+                                <span>스파구인구직</span>
+                            </p>    
+                        </div>
+                    </a>
+                </div>  
+                <div class="col-4 col-tb-6 py-15">
+                    <a href="#" class="card">
+                        <div class="img-thumb">
+                            <img src="./images/3.jpg">
+                        </div>
+                        <div class="card-contents">
+                            <h3 class="ellipsis">행복한유기견세상</h3>
+                            <p class="title-info ellipsis">안락사 없는 유기견 보호소 만들기 커뮤니티<p>
+                            <p class="hash ellipsis">
+                                <span class="act">추천카페</span>
+                                <span>유기견</span>
+                                <span>강아지</span>
+                                <span>반려동물</span>
+                            </p>    
+                        </div>
+                    </a>
+                </div>  
+                <div class="col-4 col-tb-6 py-15">
+                    <a href="#" class="card">
+                        <div class="img-thumb">
+                            <img src="./images/4.png">
+                        </div>
+                        <div class="card-contents">
+                            <h3 class="ellipsis">레슨인포</h3>
+                            <p class="title-info ellipsis">음악 분야에서 필요한 레슨과 정보를 공유<p>
+                            <p class="hash ellipsis">
+                                <span class="act">추천카페</span>
+                                <span>피아노</span>
+                                <span>바이올린</span>
+                                <span>플롯</span>
+                            </p>    
+                        </div>
+                    </a>
+                </div>  
+                <div class="col-4 col-tb-6 py-15">
+                    <a href="#" class="card">
+                        <div class="img-thumb">
+                            <img src="./images/5.jpg">
+                        </div>
+                        <div class="card-contents">
+                            <h3 class="ellipsis">63AMG CLUB</h3>
+                            <p class="title-info ellipsis">벤츠에 관심이 있으며, 자동차에 열정이 넘치는 사람들<p>
+                            <p class="hash ellipsis">
+                                <span class="act">추천카페</span>
+                                <span>벤츠</span>
+                                <span>메르세데스</span>
+                                <span>AMG</span>
+                            </p>    
+                        </div>
+                    </a>
+                </div>  
+                <div class="col-4 col-tb-6 py-15">
+                    <a href="#" class="card">
+                        <div class="img-thumb">
+                            <img src="./images/6.jpg">
+                        </div>
+                        <div class="card-contents">
+                            <h3 class="ellipsis">경품으로 살람 장만하는 사람들</h3>
+                            <p class="title-info ellipsis">경품으로 살림장만하는 사람들의 비밀스런 노하우가 가득한 카페<p>
+                            <p class="hash ellipsis">
+                                <span class="act">추천카페</span>
+                                <span>경품</span>
+                                <span>이벤트</span>
+                                <span>샘플</span>
+                            </p>    
+                        </div>
+                    </a>
+                </div>  
+             <!- / loop -->  
+            </div>
+        </div>
+    </div>
+    <!-- list -->
+    <div class="container pt-50 pb-40">
+        <div class="row">
+            <div class="col-8 col-tb-12 pr-30">
+                <div class="d-flex space-bet pb-40">
+                    <h2>카페 인기글</h2>
+                    <p class="dt"></p>
+                </div>
+                <!-- 목록 -->
+                <ul class="list-pop" id="rankContent">
+                    <!-- loop -->
+                    <li>
+                        <a href="#" target="_blank" class="list">
+                            <div class="row align-item-center"> 
+                                <div class="img-thumb2 col-2">
+                                    <img src="images/li1.jpg" alt="01">
+                                </div>
+                                <div class="contents-pop col-6">
+                                    <h3 class="ellipsis"><strong>1</strong>조리사 연봉이 1억.JPG<h3>
+                                </div>
+                                <div class="cafe-pop col-2">
+                                    <p class="ellipsis">도탁스(Dotacks)</p>
+                                </div>
+                                <div class="sub-pop col-2">
+                                    <p>댓글 <span>18</span></p> 
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="list">
+                            <div class="row align-item-center"> 
+                                <div class="img-thumb2 col-2">
+                                    <img src="images/li2.jpg" alt="02">
+                                </div>
+                                <div class="contents-pop col-6">
+                                    <h3 class="ellipsis"><strong>2</strong>다욧하는데 도저히 살이 안빠져서 피티쌤한테 물어봤더니ㅠㅠㅠ<h3>
+                                </div>
+                                <div class="cafe-pop col-2">
+                                    <p class="ellipsis">여성시대</p>
+                                </div>
+                                <div class="sub-pop col-2">
+                                    <p>댓글 <span>110</span></p> 
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="list">
+                            <div class="row align-item-center"> 
+                                <div class="img-thumb2 col-2">
+                                    <img src="images/li3.jpg" alt="03">
+                                </div>
+                                <div class="contents-pop col-6">
+                                    <h3 class="ellipsis"><strong>3</strong>미국 본사가도 못 먹는다. 한국에서도 단 한곳에만 있는 쉑쉑메뉴.jpg<h3>
+                                </div>
+                                <div class="cafe-pop col-2">
+                                    <p class="ellipsis">여성시대</p>
+                                </div>
+                                <div class="sub-pop col-2">
+                                    <p>댓글 <span>24</span></p> 
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="list">
+                            <div class="row align-item-center"> 
+                                <div class="img-thumb2 col-2">
+                                    <img src="images/li4.jpg" alt="04">
+                                </div>
+                                <div class="contents-pop col-6">
+                                    <h3 class="ellipsis"><strong>4</strong>친동생 대신 계산하면 차라리 절교한다는 이용진<h3>
+                                </div>
+                                <div class="cafe-pop col-2">
+                                    <p class="ellipsis">여성시대</p>
+                                </div>
+                                <div class="sub-pop col-2">
+                                    <p>댓글 <span>112</span></p> 
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="list">
+                            <div class="row align-item-center"> 
+                                <div class="img-thumb2 col-2">
+                                    <img src="images/li5.jpg" alt="05">
+                                </div>
+                                <div class="contents-pop col-6">
+                                    <h3 class="ellipsis"><strong>5</strong>게임하다가 응급실 실려간 사람.jpg<h3>
+                                </div>
+                                <div class="cafe-pop col-2">
+                                    <p class="ellipsis">도탁스(Dotacks)</p>
+                                </div>
+                                <div class="sub-pop col-2">
+                                    <p>댓글 <span>12</span></p> 
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="list">
+                            <div class="row align-item-center"> 
+                                <div class="img-thumb2 col-2">
+                                    <img src="images/li6.jpg" alt="06">
+                                </div>
+                                <div class="contents-pop col-6">
+                                    <h3 class="ellipsis"><strong>6</strong>우리 할머니 양성애자 되심...<h3>
+                                </div>
+                                <div class="cafe-pop col-2">
+                                    <p class="ellipsis">여성시대</p>
+                                </div>
+                                <div class="sub-pop col-2">
+                                    <p>댓글 <span>38</span></p> 
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="list">
+                            <div class="row align-item-center"> 
+                                <div class="img-thumb2 col-2">
+                                    <img src="images/li7.jpg" alt="07">
+                                </div>
+                                <div class="contents-pop col-6">
+                                    <h3 class="ellipsis"><strong>7</strong>나와 연애하기 좋은 MBTI는 뭘까?<h3>
+                                </div>
+                                <div class="cafe-pop col-2">
+                                    <p class="ellipsis">가연</p>
+                                </div>
+                                <div class="sub-pop col-2">
+                                    <p>댓글 <span>80</span></p> 
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="list">
+                            <div class="row align-item-center"> 
+                                <div class="img-thumb2 col-2">
+                                    <img src="images/li8.jpg" alt="08">
+                                </div>
+                                <div class="contents-pop col-6">
+                                    <h3 class="ellipsis"><strong>8</strong>GOS에 뼈맞은 삼성, 원가절감 없애나<h3>
+                                </div>
+                                <div class="cafe-pop col-2">
+                                    <p class="ellipsis">도탁스(Dotacks)</p>
+                                </div>
+                                <div class="sub-pop col-2">
+                                    <p>댓글 <span>111</span></p> 
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="list">
+                            <div class="row align-item-center"> 
+                                <div class="img-thumb2 col-2">
+                                    <img src="images/li9.jpg" alt="09">
+                                </div>
+                                <div class="contents-pop col-6">
+                                    <h3 class="ellipsis"><strong>9</strong>쉑쉑버거에서 그렇게 맛있다는 메뉴.JPG<h3>
+                                </div>
+                                <div class="cafe-pop col-2">
+                                    <p class="ellipsis">여성시대</p>
+                                </div>
+                                <div class="sub-pop col-2">
+                                    <p>댓글 <span>15</span></p> 
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="list">
+                            <div class="row align-item-center"> 
+                                <div class="img-thumb2 col-2">
+                                    <img src="images/li10.jpg" alt="10">
+                                </div>
+                                <div class="contents-pop col-6">
+                                    <h3 class="ellipsis"><strong>10</strong>[LOL] 애쉬 vs 세트.gif<h3>
+                                </div>
+                                <div class="cafe-pop col-2">
+                                    <p class="ellipsis">도탁스(Dotacks)</p>
+                                </div>
+                                <div class="sub-pop col-2">
+                                    <p>댓글 <span>12</span></p> 
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- /loop-->
+                </ul>
+            </div>
+            <!-- notice -->
+            <div class="col-4 col-tb-12">
+                <h2>공지</h2>
+                <p class="cafe-notice">
+                    <a href="#">대문 꾸미리 '다음 에디터' 서비스 종료 안내</a>
+                </p>
+                <ul class="ul-notice">
+                    <li><a href="#">카페앱 대문 꾸비기 대문 꾸미기 </a></li>
+                    <li><a href="#">다음 에디터 사용 종료 안내 </a></li>
+                    <li><a href="#">불법촬영물등의 유통 방지를 위한 기술적, 관리적 관점에서 보는 생각 </a></li>
+                    <li><a href="#">우리 카페 홍보 신청방법(new) 을 안내해 드려요! </a></li>
+                    <li><a href="#">카페앱 대문 꾸비기 대문 꾸미기 </a></li>
+                </ul>
+                <h2 class="mt-4">카페 지원 안내</h2>
+                <div class="support-box">
+                    <div class="support-boxa act">
+                        <p>나니즈와 함께하는
+                           서포터즈 카페랭킹
+                           구경하실래요?</p>
+                        <div class="face">
+                            <div class="eyes eye-left"></div>
+                            <div class="eyes eye-right"></div>
+                            <div class="nose">
+                                <div class="nostrils nostrils-left"></div>
+                                <div class="nostrils nostrils-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="support-boxb">
+                    </div>
+                    <ul class="page" id="page">
+                        <li class="action" onclick="vl(0)"></li>
+                        <li onclick="vl(1)"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fancafe -->
+    <section class="fanCafe">
+        <div class="container">
+            <div class="row fanWrap">
+                <h2>
+                    <div class="icon">
+                        <span class="material-icons">groups</span>
+                    </div>팬카페
+                </h2>
+                <p><a href="#">전체보기</a></p>
+            </div>
+            <div class="row fancafe-list pt-40">
+                <!-- loop -->
+                <div class="col-4 col-tb-10">
+                    <a href="#" class="card-box">
+                        <div class="card-img">
+                            <img src="images/fancafe.jpg" alt="팬카페 사진1">
+                            <div class="numberbox">1</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="circle-img">
+                                    <img src="images/fancafe2.jpg" alt="bk1">
+                                </div>
+                                <div class="card-content">
+                                   <strong>이여우</strong>
+                                    <div class="card-tag">
+                                        <span class="rbox">카페 1등</span>
+                                        <span class="ybox">응원 1등</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4 col-tb-10">
+                    <a href="#" class="card-box">
+                        <div class="card-img">
+                            <img src="images/fancafe.jpg" alt="팬카페 사진2">
+                            <div class="numberbox">2</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="circle-img">
+                                    <img src="images/fancafe2.jpg" alt="bk1">
+                                </div>
+                                <div class="card-content">
+                                    <strong>기호주</strong>
+                                    <div class="card-tag">
+                                        <span class="rbox">카페 2등</span>
+                                        <span class="ybox">응원 3등</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4 col-tb-10">
+                    <a href="#" class="card-box">
+                        <div class="card-img">
+                            <img src="images/fancafe.jpg" alt="팬카페 사진3">
+                            <div class="numberbox">3</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="circle-img">
+                                    <img src="images/fancafe2.jpg" alt="bk1">
+                                </div>
+                                <div class="card-content">
+                                    <strong>이서워</strong>
+                                    <div class="card-tag">
+                                        <span class="rbox">카페 3등</span>
+                                        <span class="ybox">응원 2등</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- loop -->
+            </div>
+        </div>
+    </section>
+    <!-- category -->
+    <section class="container cate">
+        <h2 class="pb-30"><strong>카테고리</strong> 별 랭킹보기</h2>
+        <ul>
+            <li>
+                <a href="#"><strong>생활 · 경제</strong></a>
+                <a href="#">생활 · 건강</a>
+                <a href="#">경제 · 금융</a>
+                <a href="#">정치 · 사회</a>
+                <a href="#"><strong>팬카페</strong></a>
+            </li>
+            <li>
+                <a href="#"><strong>친목 · 모임</strong></a>
+                <a href="#">친목 여성</a>
+                <a href="#" class="ml-50"><strong>게임 · 만화</strong></a>
+                <a href="#">만화 · 애니메이션</a>
+                <a href="#">게임</a>
+            </li>
+            <li>
+                <a href="#"><strong>취미 · 레저</strong></a>
+                <a href="#">취미</a>
+                <a href="#">스포츠 · 레저</a>
+                <a href="#"><strong>연예 · 예술</strong></a>
+                <a href="#">영화</a>
+                <a href="#">음악</a>
+                <a href="#">방송 · 연예</a>
+                <a href="#">문학 · 예술</a>
+            </li>
+            <li>
+                <a href="#"><strong>지역 · 동문</strong></a>
+                <a href="#">동창 · 동문</a>
+                <a href="#">지역 · 고향</a>
+                <a href="#">e-마을</a>
+                <a href="#">군대</a>
+                <a href="#">종교</a>
+            </li>
+            <li>
+                <a href="#"><strong>학문 · 교육</strong></a>
+                <a href="#">교육 · 외국어</a>
+                <a href="#">컴퓨터 · 인터넷</a>
+                <a href="#">과학 · 인문</a>
+                <a href="#">대학 · 대학원</a>
+                <a href="#">초중고교</a>
+            </li>
+        </ul>
+    </section>
+    <!-- footer -->
+    <footer class="container">
+        <h2>CAFE</h2>
+        <ul class="d-flex">
+            <li><a href="#">서비스 약관/정책</a></li>
+            <li><a href="#">권리침해신고</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">상거래 피해구제신청</a></li>
+            <li><a href="#">카페운영정책</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">문의하기</a></li>
+        </ul>
+        <p class="copy">&copy; Kokoa-copy Corp.</p>
+    </footer>
+    <!-- top 올라가는 버튼 -->
+    <a href="#" id="top">
+        <span class="material-icons">keyboard_arrow_up</span>
+    </a>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
